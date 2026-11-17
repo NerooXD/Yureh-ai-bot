@@ -19,6 +19,9 @@ GROQ_API_KEY = os.getenv("gsk_5qLVEgt4lmf3EZ89G8bIWGdyb3FYmFOCOKrdQhak3G35Y5NOin
 # ==========================================
 
 # Cek apakah token ada (biar nggak crash kalau lu lupa setting di Railway)
+print(f"[DEBUG] Token kebaca: {len(BOT_TOKEN) if BOT_TOKEN else 'KOSONG'}")
+print(f"[DEBUG] Groq Key kebaca: {len(GROQ_API_KEY) if GROQ_API_KEY else 'KOSONG'}")
+
 if not BOT_TOKEN or not GROQ_API_KEY:
     print("[!] ERROR: Token Telegram atau Groq API Key belum diset di Environment Variables!")
     exit(1)
