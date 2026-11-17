@@ -9,23 +9,21 @@ import os
 
 print("[DEBUG] SEMUA ENV RAILWAY:", {k: v for k, v in os.environ.items() if k.isupper()})
 # ==========================================
-# KONFIGURASI (OTOMATIS BACA DARI RAILWAY)
+# KONFIGURASI HARDCODE (Biar jalan di Railway)
 # ==========================================
-BOT_TOKEN = os.getenv("8789618896:AAHKf4SJMnCycUcZld-UgzDcM4NeqK4ebYw")
-CHANNEL_ID = os.getenv("-1004424291938")
-JAM_POSTING = os.getenv("JAM_POSTING", "14:00")
-YOUR_TELEGRAM_ID = int(os.getenv("6056464691", "0"))
+BOT_TOKEN = "b6a4725b-40a3-4347-9f3d-2893875b0d48"
+GROQ_API_KEY = "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"
 
-GROQ_API_KEY = os.getenv("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")
+CHANNEL_ID = "@yurehhaxx"
+YOUR_TELEGRAM_ID = 6056464691
+
+JAM_POSTING = "14:00"
+# ==========================================
 # ==========================================
 
 # Cek apakah token ada (biar nggak crash kalau lu lupa setting di Railway)
 print(f"[DEBUG] Token kebaca: {len(BOT_TOKEN) if BOT_TOKEN else 'KOSONG'}")
 print(f"[DEBUG] Groq Key kebaca: {len(GROQ_API_KEY) if GROQ_API_KEY else 'KOSONG'}")
-
-if not BOT_TOKEN or not GROQ_API_KEY:
-    print("[!] ERROR: Token Telegram atau Groq API Key belum diset di Environment Variables!")
-    exit(1)
 
 bot = telebot.TeleBot(BOT_TOKEN)
 BOT_NAME = "Yureh AI"
