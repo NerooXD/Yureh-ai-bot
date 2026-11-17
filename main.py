@@ -11,7 +11,7 @@ print("[DEBUG] SEMUA ENV RAILWAY:", {k: v for k, v in os.environ.items() if k.is
 # ==========================================
 # KONFIGURASI HARDCODE (Biar jalan di Railway)
 # ==========================================
-BOT_TOKEN = "8789618896:AAHKf4SJmCycuz1d-UgzDcMNeqk4ebW"
+BOT_TOKEN = "8789618896:AAF54NYgxq6BrQRev4VA9GNrUIJP_-Yf6xs"
 GROQ_API_KEY = "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"
 
 CHANNEL_ID = "@yurehhaxx"
