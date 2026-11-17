@@ -7,6 +7,7 @@ import requests
 import json
 import os
 
+print("[DEBUG] SEMUA ENV RAILWAY:", {k: v for k, v in os.environ.items() if k.isupper()})
 # ==========================================
 # KONFIGURASI (OTOMATIS BACA DARI RAILWAY)
 # ==========================================
